@@ -1,0 +1,16 @@
+To create com.stackroute.lib package, create folder within folder of the same name.
+Create java file within the lib folder with the heading - package com.stackroute.lib;
+Make the class public
+Go to command prompt and type the following commands:
+1. C:\Users\CRAnagha\IdeaProjects\testing>javac com/stackroute/lib/Main.java (run the command to compile from the project root and give the entire path of the java file) 
+2. C:\Users\CRAnagha\IdeaProjects\testing>jar -cvf Main.jar . (creates a jar file of the same in the current directory, indicated by .)
+
+Copy the jar file onto the client side project root
+Create a package of com.stackroute.client in the client side
+Create the client side java file inside the folder with the heading - package com.stackroute.client;
+								      import com.stackroute.lib.Main; (where Main is the name of the java class within the lib folder)
+
+Go to command prompt and type the following commands:
+C:\Users\CRAnagha\Desktop\project>javac -cp MainLib.jar com\stackroute\client\ClientMain.java
+C:\Users\CRAnagha\Desktop\project>java -cp MainLib.jar;. com.stackroute.client.ClientMain (run the execution command from the client project root specify -cp for class path and ;. for specifying 
+												to look into the specified directory for the java file)

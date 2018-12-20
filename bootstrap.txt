@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Charm|Playfair+Display" rel="stylesheet">
+    <link rel = "stylesheet" href = "css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+
+    <!--Creating a default, fixed navigation bar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <!--Spanning the container to fit the entire field-->
+      <div class="container-fluid">
+        <!--Creating a header-->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">MusicTrail</a>
+        </div>
+        <!--Specifying the tab pane-->
+        <ul class="nav nav-tabs">
+          <li><a  data-toggle = "tab" href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+          <li class="dropdown-toggle" data-toggle="dropdown"><a data-toggle="tab" href="#">Teachers<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a  tabindex="-1" href="#">Carnatic</a></li>
+              <li class="dropdown-item"><a tabindex="-1" href="#">Hindustani</a></li>
+            </ul>
+          </li>
+          <li><a data-toggle="tab" href="#">Our Team</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+    <!--Building a hero image unit-->
+    <div class="hero-image">
+      <!--Inserting text with the hero image-->
+      <div class="hero-text">
+        <h1 style="font-size:60px">Welcome to MusicTrail</h1>
+        <h4 style="font-size:30px">If you are a teacher of music</h4>
+        <!--Creating a button withing the hero image-->
+        <button>Register</a></button>
+      </div>
+    </div>
+
+    <div class="container">
+      <!--Creating a jumbotron-->
+      <div class="jumbotron">
+        <h1 style = "font-size:40px">Find your teacher</h1>      
+        <p>We enable students and teachers of music to connect with one another. If you are a student of music looking to advance your knowledge or start from the very beginning but have nowhere to go, we make it easy for you. Simply search for your teacher in the style and in the city that you want to learn. You can not only search for your teacher, you can also listen to their audio and video clippings.</p>
+      </div>     
+    </div>
+
+    <!--Placing text-->
+    <div class = "container">
+      <h1>We have teachers from all over</h1>
+    </div>
+
+    <div class="container"> 
+      <!--Creating carousel-->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!--Number of carousel elements or indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+          <li data-target="#myCarousel" data-slide-to="6"></li>
+        </ol>
+  
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <!--First carousel element-->
+          <div class="item active">
+            <img class="img-fluid" src="img/chennai.PNG" alt="Chennai" style="width:100%;" />
+            <div class="carousel-caption">
+              <h3>Chennai</h3>
+            </div>
+          </div>
+  
+          <!--Second carousel element-->
+          <div class="item">
+            <img class="img-fluid" src="img/bangalore.PNG" alt="Bengaluru" style="width:100%;" />
+            <div class="carousel-caption">
+              <h3>Bengaluru</h3>
+            </div>
+          </div>
+      
+          <!--Third carousel element-->
+          <div class="item">
+            <img class="img-fluid" src="img/mysore.PNG" alt="Mysuru" style="width:100%;" />
+            <div class="carousel-caption">
+              <h3>Mysuru</h3>
+            </div>
+          </div>
+
+          <!--Fourth carousel element-->
+          <div class="item">
+            <img class="img-fluid" src="img/mumbai.PNG" alt="Mumbai" style="width:100%;">
+            <div class="carousel-caption">
+              <h3>Mumbai</h3>
+            </div>
+          </div>
+
+          <!--Fifth carousel element-->
+          <div class="item">
+            <img class="img-fluid" src="img/delhi.PNG" alt="Delhi" style="width:100%;">
+            <div class="carousel-caption">
+              <h3>Delhi</h3>
+            </div>
+          </div>
+
+          <!--Sixth carousel element-->
+          <div class="item">
+            <img class="img-fluid" src="img/kolkata.PNG" alt="Kolkata" style="width:100%;">
+            <div class="carousel-caption">
+              <h3>Kolkata</h3>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!--Creating a registration form-->
+    <form>
+      <div class="container"> 
+        <h1>Register</h1>
+        <p>Please fill in this form to create a teacher account.</p>
+        <hr>
+      
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+      
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+      
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+        <label for="video"><b>Video</b></label>
+        <input type="file" placeholder="Upload video" name="video" required>
+        <button type="button" class="btn btn-primary">Submit</button>
+
+        <hr>
+      
+        <p>By creating an account you agree to our <a href="#">Terms & Conditions</a>.</p>
+        <button type="submit" class="registerbtn">Register</button>
+      </div>
+      
+      <div class="container signin">
+        <p>Already have an account? <a href="#">Sign in</a>.</p>
+      </div>
+    </form>
+
+    <div class="container">
+      <!--Trigger the modal with a button-->
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Give us feedback</button>
+        
+      <!--Appearance of dialog box or modal-->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            
+          <!--Modal content-->
+          <div class="modal-content">
+            <!--Modal heading-->
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Want to give us feedback on our service?</h4>
+            </div>
+            <!--Modal body-->
+            <div class="modal-body">
+              <p>Write to us at 123@workmail.com</p>
+              <p>Your feedback is valuable to us!</p>
+            </div>
+            <!--Modal footer-->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>     
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid"
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6050596012756!2d77.62822631484923!3d12.933086219221435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae145d639e8e7b%3A0x40d7ef206da75832!2s811%2C+5th+Cross+Rd%2C+Koramangala+4th+Block%2C+Koramangala%2C+Bengaluru%2C+Karnataka+560034!5e0!3m2!1sen!2sin!4v1544703785485" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <!--Footer-->
+    <footer>
+      <!--Grid system for footer-->
+      <div class="row">
+        <div class="col-sm-4"><a href="#" ><strong>Facebook</strong></a></div>
+        <div class="col-sm-4"><a href="#" ><strong>Twitter</strong></a></div>
+        <div class="col-sm-4"><a href="#" ><strong>Google</strong></a></div>
+      </div>
+    </footer>
+  
+  </body>
+</html>

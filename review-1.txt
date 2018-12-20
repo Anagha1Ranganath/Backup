@@ -1,0 +1,13 @@
+Use of semantic elements
+Use of aside tag
+Difference between navbar-dark and bg-dark
+Markdown language
+Placing script tags
+All letters should be small in HTML.  They have to be styled in CSS
+What is iframe
+What is the difference between iframe, objects and embed
+What is parallax
+Difference between carousel and slider
+Vertical form, horizontal form, inline form
+Use of modernizr js
+What is the use of bundle.min.js

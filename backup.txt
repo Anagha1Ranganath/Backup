@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+    <head>
+        <link rel = "stylesheet" href = "assignment1.css" />
+        <meta char offset = "utf-8" />
+        <title>My first webpage</title> 
+    </head>
+
+    <body style = background-color:blanchedalmond>
+            <header class = "fixed";>
+                <h1 id = "heading">GuruShishya</h1>
+
+                <nav>
+                    <ul>
+                        <li><a href = "">Home</a></li>
+                        <li><a href = "">Teachers
+                            <span class = "arrow">&#x25BC;</span>
+                            </a>
+                            <ul class = "submenu">
+                                <li><a href = "">Carnatic</a></li>
+                                <li><a href = "">Hindustani</a></li>
+                            </ul>
+                        </li>
+                        <li><a href = "">Our team</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+                <div class = "flex-container">
+
+                    <div class = "box one"><p><strong>Are you a teacher?</strong></p>
+                        <p><a href = "">Register</a> with us now!!</p></div>
+                    <div class = "box two">This platform was created with a simple vision of connecting students and teachers of music</div>
+                    <div class = "box three"></div>
+
+                </div>
+                    
+                    <footer class = "footer";>
+                        <span>Curated by Anagha Ranganath</span>
+                    </footer>
+        
+            </div> 
+
+    </body>
+</html>

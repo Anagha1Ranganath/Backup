@@ -1,0 +1,2 @@
+Apply semantics to Bootstrap assignment
+Complete HTML and CSS

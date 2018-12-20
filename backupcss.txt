@@ -1,0 +1,121 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.fixed{
+    position:fixed;
+    top:0;
+}
+
+#heading{
+    text-align: center;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 50px;
+    text-shadow: 1 1 1 gray;
+}
+
+nav{
+    background:coral;
+    margin-top:30px;
+}
+
+nav ul{
+    list-style-type:none;
+    display:flex;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+    font-size:30px;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    display:block;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:background 0.4s;
+
+}
+
+nav a:hover{
+    background-color:white;
+}
+
+nav li{
+    width:100%;
+    text-align: center;
+    position: relative;
+}
+
+nav li:hover .submenu > li{
+    display:block;
+    top:0px;
+}
+
+.submenu li{
+    display:none;
+    position:absolute;
+    top:0px;
+}
+
+.submenu{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    width:100%;
+}
+
+.submenu li{
+    position:relative;
+}
+
+.arrow{
+    margin-left:30px;
+}
+
+.flex-container{
+
+    display:flex;
+    background:;
+    font-size: 30px;
+    margin-top:300px;
+    font-family: Comic Sans MS, cursive, sans-serif;
+}
+
+.box{
+
+    height:350px;
+    flex:1 0 200px;
+
+}
+
+.one{
+    padding-left:50px;
+    padding-right:50px;
+    margin:auto;
+}
+
+.two{
+    padding-left:50px;
+    padding-right:50px;
+    margin:auto;
+}
+
+.three{
+
+    padding-left:50px;
+    padding-right:50px;
+    margin:auto;
+}
+
+.footer{
+    font-family: Comic Sans MS, cursive, sans-serif;
+    position:absolute;
+    bottom:0;
+}
